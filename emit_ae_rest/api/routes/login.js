@@ -14,7 +14,7 @@ router.post('/', (req, res, next) => {
     }
     res.status(201).json({
         message: 'Handling POST request to /login',
-        createdLogin: login
+        value: login
     });
 });
 
