@@ -8,8 +8,13 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
+    const login = {
+        name = req.body.name,
+        email = req.body.email
+    }
     res.status(201).json({
-        message: 'Handling POST request to /login'
+        message: 'Handling POST request to /login',
+        createdLogin: login
     });
 });
 
