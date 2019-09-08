@@ -8,7 +8,7 @@ const loginRoutes = require('./api/routes/login');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json({}));
+app.use(bodyParser.json());
 
 // Routes
 app.use('/login', loginRoutes);
